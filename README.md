@@ -1,16 +1,19 @@
-# React + Vite
+Kampüs Film Kulübü - Dizi Arama Uygulaması
+Bu proje, Süleyman Demirel Üniversitesi Film Kulübü için geliştirilmiş bir web tabanlı dizi arama ve gösterim listesi oluşturma uygulamasıdır. Kullanıcıların TVMaze API'sini kullanarak dizileri aramasına, filtrelemesine, detaylarını görüntülemesine ve bir "Gösterim Listesi" oluşturmasına olanak tanır.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Buradan Dene[]
 
-Currently, two official plugins are available:
+✨ Temel Özellikler
+Dizi Arama: TVMaze API'si üzerinden anlık dizi arama.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Filtreleme: Sonuçları Türe, Dile ve Minimum Puana göre filtreleme.
 
-## React Compiler
+Gösterim Listesi (Watchlist): Seçilen dizileri "Gösterime Girecekler" paneline ekleme, çıkarma ve listeyi temizleme.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Kalıcı Depolama: Gösterim listesi ve filtre seçimleri, sayfa yenilendiğinde kaybolmaz (localStorage kullanılır).
 
-## Expanding the ESLint configuration
+Sayfalama (Pagination): Arama sonuçları her sayfada 6 öğe gösterecek şekilde sayfalara bölünmüştür.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Detay Sayfası: Her dizi için bölüm listesini de içeren ayrı bir detay sayfası.
+
+Durum Yönetimi: Yükleniyor, Hata ve Boş Sonuç durumları için koşullu arayüz gösterimi.
